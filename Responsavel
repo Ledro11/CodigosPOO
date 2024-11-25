@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Responsável {
+    private String nome, cpf, telefone;
+    Scanner l = new Scanner(System.in);
+
+    public Responsável(String nome, String cpf, String telefone) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+    }
+    
+    public Responsável(){
+        System.out.println("Digite seu nome: ");
+        nome = l.nextLine();
+        System.out.println("Digite seu cpf: ");
+        cpf = l.nextLine();
+        System.out.println("Digite seu telefone: ");
+        telefone = l.nextLine();
+    }
+    
+    public void exibir(){
+        System.out.println("\nNome: "+nome+"\nCPF: "+cpf+"\nTelefone: ");
+    }
+    
+    public void atualizar(){
+        System.out.println("Atualize seu nome: ");
+        nome = l.nextLine();
+        System.out.println("Atualize seu cpf: ");
+        cpf = l.nextLine();
+        System.out.println("Atualize seu telefone: ");
+        telefone = l.nextLine();
+    }
+    
+    
+}
